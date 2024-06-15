@@ -1,63 +1,79 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     margin: 0 auto;
     padding: 0;
 }
 
-@font-face{
+@font-face {
     font-family: 'Montserrat';
     src: url(../fonts/Montserrat-Bold.ttf);
     font-weight: 700;
     font-style: normal;
 }
-@font-face{
+
+@font-face {
     font-family: 'Montserrat';
     src: url(../fonts/Montserrat-Medium.ttf);
     font-weight: 600;
     font-style: normal;
 }
-@font-face{
+
+@font-face {
     font-family: 'Lato';
     src: url(../fonts/Lato-Bold.ttf);
     font-weight: 700;
     font-style: normal;
 }
-@font-face{
+
+@font-face {
     font-family: 'Lato';
     src: url(../fonts/Lato-SemiBold.ttf);
     font-weight: 400;
     font-style: normal;
 }
-@font-face{
+
+@font-face {
+    font-family: 'Lato';
+    src: url(../fonts/Lato-Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Merriweather';
     src: url(../fonts/Merriweather-Black.ttf);
     font-weight: 900;
     font-style: normal;
 }
-@font-face{
+
+@font-face {
     font-family: 'Merriweather';
     src: url(../fonts/Merriweather-Bold.ttf);
     font-weight: 700;
     font-style: normal;
 }
-@font-face{
+
+@font-face {
     font-family: 'SedgwickAve';
     src: url(../fonts/SedgwickAve-Regular.ttf);
     font-weight: 500;
     font-style: normal;
 }
 
-.container{
+
+/* первый */
+
+.container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0;
 }
 
-.background{
+.background {
     background: url(../img/bg.png);
     background-size: cover;
     background-position: center;
@@ -65,17 +81,17 @@ body{
     position: relative;
 }
 
-.background .bg-sleva{
+.background .bg-sleva {
     position: absolute;
     width: 200px;
 }
 
-.background .container .navigat{
+.background .container .navigat {
     display: flex;
     justify-content: space-evenly;
 }
 
-.background .navigat .btn button{
+.background .navigat .btn button {
     color: #f87932;
     padding: 10px 30px;
     border-radius: 0px 0px 15px 15px;
@@ -89,13 +105,13 @@ body{
     transition: .3s;
 }
 
-.background .navigat .btn button:hover{
+.background .navigat .btn button:hover {
     color: #FFFFFF;
     background-color: #f87932;
     transition: .6s;
 }
 
-.background .navigat .btn1 button{
+.background .navigat .btn1 button {
     padding: 10px 30px;
     border-radius: 0px 0px 15px 15px;
     border: none;
@@ -104,12 +120,12 @@ body{
     width: 130px;
 }
 
-.background .trav{
+.background .trav {
     display: flex;
     margin-top: 130px;
 }
 
-.background .trav .slovo{
+.background .trav .slovo {
     font-family: 'Merriweather';
     font-size: 80px;
     font-weight: 700;
@@ -118,11 +134,11 @@ body{
     margin-bottom: 88px;
 }
 
-.background .trav .slovo .cyan{
+.background .trav .slovo .cyan {
     color: #38bfa7;
 }
 
-.background .slova .book{
+.background .slova .book {
     font-family: 'Lato';
     font-weight: 400;
     font-size: 17px;
@@ -131,21 +147,96 @@ body{
     height: 62px;
     background-color: #F87932;
     transition: .5s;
-    border: none;
     padding-left: 10px;
     letter-spacing: 5px;
     transition: .3s;
 }
 
-.background .slova .book:hover{
+.background .slova .book:hover {
     border-radius: 15px;
     color: #F87932;
     background-color: #FFFFFF;
     transition: .6s;
 }
 
-.background .container .trav .kubs img{
+.background .container .trav .kubs img {
     height: 610px;
     width: 610px;
     margin-left: 100px;
+}
+
+
+/* второй блок */
+
+.adventure {
+    margin-top: 80px;
+    position: relative;
+}
+
+.adventure .container .img{
+    background-image: url(../img/полоска.png);
+    width: 720px;
+    height: 600px;
+    position: absolute;
+    background-size: cover;
+    left: 120px;
+    bottom: 80px;
+}
+
+main .adventure .container {
+    display: flex;
+    justify-content: center;
+}
+
+.adventure .fotoodin,
+.fotodva {
+    width: 50%;
+}
+
+.adventure .container .fotodva img {
+    width: 100%;
+}
+
+.adventure .fotoodin h4 {
+    font-size: 24px;
+    font-family: 'Lato';
+    font-weight: 300;
+    letter-spacing: 6px;
+}
+
+.adventure .fotoodin h2 {
+    font-size: 60px;
+    font-family: 'Merriweather';
+    font-weight: 700;
+}
+
+.adventure .fotoodin p {
+    font-size: 18px;
+    font-family: 'Lato';
+    font-weight: 300;
+    width: 75%;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    letter-spacing: 4px;
+}
+
+main .adventure .btn2 button {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 17px;
+    color: #FFFFFF;
+    width: 213px;
+    height: 62px;
+    background-color: #F87932;
+    transition: .5s;
+    padding-left: 10px;
+    letter-spacing: 5px;
+    transition: .3s;
+}
+
+main .adventure .btn2 button:hover {
+    border-radius: 15px;
+    color: #F87932;
+    background-color: #FFFFFF;
+    transition: .6s;
 }
