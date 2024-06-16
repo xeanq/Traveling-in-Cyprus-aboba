@@ -301,14 +301,11 @@ main .video {
 
 /* четвёртый блок */
 
-.container {
-    margin-top: 180px;
-}
-
 .blog .container {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 180px;
 }
 
 .blog .container .text {
@@ -431,6 +428,111 @@ main .video {
 }
 
 .blog .container button:hover {
+    border-radius: 15px;
+    color: #F87932;
+    background-color: #FFFFFF;
+    transition: .6s;
+}
+
+
+/* пятый блок */
+
+.tour{
+    background: url(../img/photo_2024-06-03_22-43-47.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 75px;
+}
+
+.tour .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #FFFFFF;
+}
+
+.tour .container .tourist{
+    font-family: 'Merriweather';
+    font-size: 60px;
+    font-weight: 900;
+    color: #FFFFFF;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.tour .container .welcome{
+    width: 157px;
+    height: 23px;
+    background: url(../img/Group\ 3\ \(1\).png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+.tour .container .wel{
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 200;
+    color: #EEEEEE;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+}
+.tour .container .points{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.tour .container .points .up{
+    font-family: 'SedgwickAve';
+    font-size: 60px;
+    font-weight: 400;
+    color: #39BFA7;
+}
+.tour .container .points .calnd{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.tour .container .points .calnd .nmb{
+    font-family: 'SedgwickAve';
+    font-size: 70px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin: 0;
+    margin-right: 10px;
+}
+.tour .container .points .calnd .data .mounth{
+    font-family: 'SedgwickAve';
+    font-weight: 400;
+    font-size: 18px;
+    color: #969696;
+    margin: 0;
+}
+.tour .container .points .calnd .data .name{
+    font-family: 'Merriweather';
+    font-weight: 900;
+    font-size: 30px;
+    color: #DDDDDD;
+    margin: 0;
+    
+}
+.tour .container .btn{
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 17px;
+    color: #FFFFFF;
+    width: 213px;
+    height: 62px;
+    background-color: #F87932;
+    padding-left: 10px;
+    letter-spacing: 5px;
+    transition: .3s;
+    margin-bottom: 20px;
+}
+.tour .container .btn:hover{
     border-radius: 15px;
     color: #F87932;
     background-color: #FFFFFF;
