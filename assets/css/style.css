@@ -173,7 +173,7 @@ body {
     position: relative;
 }
 
-.adventure .container .img{
+.adventure .container .img {
     background-image: url(../img/полоска.png);
     width: 720px;
     height: 600px;
@@ -251,14 +251,14 @@ main .video {
     margin-top: 100px;
 }
 
-.video .container{
+.video .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.video .container .h2{
+.video .container .h2 {
     font-size: 50px;
     font-family: 'Merriweather';
     font-weight: 700;
@@ -268,7 +268,7 @@ main .video {
     text-align: center;
 }
 
-.video .container .p{
+.video .container .p {
     font-size: 20px;
     font-family: 'Lato';
     font-weight: 700;
@@ -278,22 +278,161 @@ main .video {
     text-align: center;
 }
 
-.video .container .knopka img{
+.video .container .knopka img {
     width: 40%;
 }
 
-.video .container .knopka{
+.video .container .knopka {
     display: flex;
     justify-content: center;
     margin-top: 80px;
 }
 
-.video .container .romb img{
+.video .container .romb img {
     width: 70%;
 }
 
-.video .container .romb{
+.video .container .romb {
     display: flex;
     justify-content: center;
     margin-top: 60px;
+}
+
+
+/* четвёртый блок */
+
+.container {
+    margin-top: 180px;
+}
+
+.blog .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.blog .container .text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.blog .container .text h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.blog .container .text h3 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.blog .container .text p {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lato';
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.blog .container .text img {
+    width: 200px;
+    margin-left: 500px;
+}
+
+.blog .img {
+    display: grid;
+    grid-template-columns: repeat(4, 282px);
+    grid-template-rows: repeat(2, 282px);
+    gap: 20px;
+    padding: 50px 0;
+}
+
+.blog .img .image:nth-child(1) {
+    background-image: url(../img/Rectangle\ 79.png);
+    background-size: cover;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 1;
+}
+
+.blog .img .image:nth-child(2) {
+    background-image: url(../img/Rectangle\ 82.png);
+    background-size: cover;
+    background-position: center;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 2;
+}
+
+.blog .img .image:nth-child(3) {
+    background-image: url(../img/Rectangle\ 81.png);
+    background-size: cover;
+    background-position: center;
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-row-end: 1;
+    grid-column-end: 5;
+}
+
+.blog .img .image:nth-child(4) {
+    background-image: url(../img/Rectangle\ 80.png);
+    background-size: cover;
+    background-position: center;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 2;
+}
+
+.blog .img .image:nth-child(5) {
+    background-image: url(../img/Rectangle\ 83.png);
+    background-size: cover;
+    background-position: center;
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-row-end: 3;
+    grid-column-end: 4;
+}
+
+.blog .img .image:nth-child(6) {
+    background-image: url(../img/Rectangle\ 84.png);
+    background-size: cover;
+    background-position: center;
+    grid-row-start: 2;
+    grid-column-start: 4;
+    grid-row-end: 3;
+}
+
+.blog .container .btn {
+    display: flex;
+    justify-content: center;
+}
+
+.blog .container button {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 17px;
+    color: #FFFFFF;
+    width: 213px;
+    height: 62px;
+    background-color: #F87932;
+    padding-left: 10px;
+    letter-spacing: 5px;
+    transition: .3s;
+}
+
+.blog .container button:hover {
+    border-radius: 15px;
+    color: #F87932;
+    background-color: #FFFFFF;
+    transition: .6s;
 }
