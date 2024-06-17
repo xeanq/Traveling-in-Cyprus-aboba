@@ -147,10 +147,10 @@ body {
     width: 213px;
     height: 62px;
     background-color: #F87932;
-    transition: .5s;
     padding-left: 10px;
     letter-spacing: 5px;
     transition: .3s;
+    border: none;
 }
 
 .background .slova .book:hover {
