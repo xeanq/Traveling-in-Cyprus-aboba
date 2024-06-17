@@ -565,3 +565,82 @@ main .video {
 }
 
 
+/* седьмой блок */
+
+.footer{
+    background: #151C21;
+    padding-top: 5%;
+    margin-top: 5%;
+}
+
+.footer .container .block1{
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.footer .container .block1 .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .container .block1 .logo, .c{
+    width: 25%;
+}
+
+.footer .container .block1 .logo img{
+    width: 40%;
+}
+
+.footer .container .block1 .c h2{
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+
+.footer .container .block1 .c p{
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+
+.footer .container .block1 .c{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .container hr{
+    border: 1px solid #414141;
+}
+
+.footer .container .block2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #BBBBBB;
+}
+
+.footer .container .block2 h2{
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 5%;
+}
+
+.footer .container .block2 p{
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.footer .container .block2 .icons img{
+    width: 25%;
+    margin-left: 6%;
+}
