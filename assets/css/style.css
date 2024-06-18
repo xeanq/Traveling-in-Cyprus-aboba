@@ -31,6 +31,13 @@ body {
 
 @font-face {
     font-family: 'Lato';
+    src: url(../fonts/Lato-Medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
     src: url(../fonts/Lato-SemiBold.ttf);
     font-weight: 400;
     font-style: normal;
@@ -100,16 +107,17 @@ body {
     background-color: #FFFFFF;
     font-size: 20px;
     font-family: 'Lato';
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: 4px;
     height: 50px;
     transition: .3s;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .background .navigat .butn button:hover {
-    color: #FFFFFF;
-    background-color: #f87932;
+    height: 100px;
     transition: .6s;
+    box-shadow: 0px 5px 10px 0px rgb(255, 255, 255, 0.5)
 }
 
 .background .navigat .butn1 button {
@@ -141,25 +149,32 @@ body {
 
 .background .slova .book {
     font-family: 'Lato';
-    font-weight: 400;
+    font-weight: 700;
     font-size: 17px;
     color: #FFFFFF;
     width: 213px;
     height: 62px;
     background-color: #F87932;
+    background: linear-gradient(to left, #39BFA7 50%, #f87932 50%);
+    border: #F87932 2px solid;
+    background-position: bottom left;
+    background-size: 200% 100%;
     padding-left: 10px;
     letter-spacing: 5px;
-    transition: .3s;
-    border: none;
+    transition: all 0.3s ease-in-out;
+    gap: 10px;
 }
 
 .background .slova .book:hover {
-    border-radius: 15px;
-    color: #F87932;
-    background-color: #FFFFFF;
-    transition: .6s;
+    color: #FFF;
+    background-color: white;
+    background-position: bottom right;
+    transition: .3s;
+    box-shadow: 0px 5px 10px 0px rgb(255, 255, 255, 0.5)
 }
 
+
+/* box-shadow: 0px 5px 10px 0px rgb(255, 255, 255, 0.5) */
 .background .container .trav .kubs img {
     height: 610px;
     width: 610px;
@@ -201,20 +216,20 @@ main .adventure .container {
 .adventure .fotoodin h4 {
     font-size: 24px;
     font-family: 'Lato';
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 6px;
 }
 
 .adventure .fotoodin h2 {
     font-size: 60px;
     font-family: 'Merriweather';
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .adventure .fotoodin p {
     font-size: 18px;
     font-family: 'Lato';
-    font-weight: 300;
+    font-weight: 400;
     width: 75%;
     margin-top: 20px;
     margin-bottom: 100px;
@@ -223,23 +238,28 @@ main .adventure .container {
 
 main .adventure .btn2 button {
     font-family: 'Lato';
-    font-weight: 400;
+    font-weight: 700;
     font-size: 17px;
-    color: #FFFFFF;
+    color: black;
     width: 213px;
     height: 62px;
-    background-color: #F87932;
+    background-color: white;
     transition: .5s;
     padding-left: 10px;
     letter-spacing: 5px;
     transition: .3s;
+    border: 2px solid #000000;
+    background: linear-gradient(to left, #F87932 50%, #fff 50%);
+    background-size: 200% 100%;
+    background-position: bottom left;
+    transition: all .3s ease-out;
+
 }
 
 main .adventure .btn2 button:hover {
-    border-radius: 15px;
-    color: #F87932;
-    background-color: #FFFFFF;
-    transition: .6s;
+    transition: .3s;
+    background-position: bottom right;
+    color: #fff;
 }
 
 
@@ -262,8 +282,7 @@ main .video {
 .video .container .h2 {
     font-size: 50px;
     font-family: 'Merriweather';
-    font-weight: 700;
-
+    font-weight: 900;
     color: white;
     margin-top: 350px;
     text-align: center;
@@ -290,13 +309,13 @@ main .video {
 }
 
 .video .container .romb img {
-    width: 70%;
+    width: 75%;
 }
 
 .video .container .romb {
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 39px;
 }
 .video .container .romb2 img{
     width: 0;
@@ -314,8 +333,8 @@ main .video {
 
 .blog .container .text {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    align-items: center
 }
 
 .blog .container .text h2 {
@@ -330,7 +349,7 @@ main .video {
     display: flex;
     justify-content: center;
     font-family: 'Montserrat';
-    font-weight: 700;
+    font-weight: 600;
     font-size: 30px;
 }
 
@@ -338,13 +357,15 @@ main .video {
     display: flex;
     justify-content: center;
     font-family: 'Lato';
-    font-weight: 200;
+    font-weight: 400;
     font-size: 15px;
+    letter-spacing: 3px;
 }
 
-.blog .container .text img {
-    width: 200px;
-    margin-left: 500px;
+.blog .container .text .imgg {
+    width: 157px;
+    display: flex;
+    justify-content: center;
 }
 
 .blog .img {
@@ -420,22 +441,27 @@ main .video {
 
 .blog .container button {
     font-family: 'Lato';
-    font-weight: 400;
+    font-weight: 700;
     font-size: 17px;
-    color: #FFFFFF;
+    color: black;
     width: 213px;
     height: 62px;
-    background-color: #F87932;
+    background-color: white;
+    transition: .5s;
     padding-left: 10px;
     letter-spacing: 5px;
     transition: .3s;
+    border: 2px solid #000000;
+    background: linear-gradient(to left, #F87932 50%, #fff 50%);
+    background-size: 200% 100%;
+    background-position: bottom left;
+    transition: all .3s ease-out;
 }
 
 .blog .container button:hover {
-    border-radius: 15px;
-    color: #F87932;
-    background-color: #FFFFFF;
-    transition: .6s;
+    transition: .3s;
+    background-position: bottom right;
+    color: #fff;
 }
 
 
@@ -478,11 +504,11 @@ main .video {
 .tour .container .wel{
     font-family: 'Lato';
     font-size: 16px;
-    font-weight: 200;
+    font-weight: 400;
     color: #EEEEEE;
     text-align: center;
     margin-bottom: 40px;
-    letter-spacing: 3px;
+    letter-spacing: 6px;
 }
 .tour .container .points{
     display: flex;
@@ -494,6 +520,7 @@ main .video {
     font-size: 60px;
     font-weight: 400;
     color: #39BFA7;
+    margin: 0;
 }
 .tour .container .points .calnd{
     display: flex;
@@ -506,7 +533,7 @@ main .video {
     font-weight: 400;
     color: #FFFFFF;
     margin: 0;
-    margin-right: 10px;
+    margin-right: 30px;
 }
 .tour .container .points .calnd .data .mounth{
     font-family: 'SedgwickAve';
@@ -523,24 +550,30 @@ main .video {
     margin: 0;
     
 }
-.tour .container .btn{
+.tour .container .btn228{
     font-family: 'Lato';
-    font-weight: 400;
+    font-weight: 700;
     font-size: 17px;
     color: #FFFFFF;
     width: 213px;
     height: 62px;
     background-color: #F87932;
+    background: linear-gradient(to left, #39BFA7 50%, #f87932 50%);
+    border: #F87932 2px solid;
+    background-position: bottom left;
+    background-size: 200% 100%;
     padding-left: 10px;
     letter-spacing: 5px;
-    transition: .3s;
+    transition: all 0.3s ease-in-out;
+    gap: 10px;
     margin-bottom: 20px;
 }
-.tour .container .btn:hover{
-    border-radius: 15px;
-    color: #F87932;
-    background-color: #FFFFFF;
-    transition: .6s;
+.tour .container .btn228:hover{
+    color: #FFF;
+    background-color: white;
+    background-position: bottom right;
+    transition: .3s;
+    box-shadow: 0px 5px 10px 0px rgb(255, 255, 255, 0.5)
 }
 
 
@@ -598,7 +631,7 @@ main .video {
 
 .footer .container .block1 .c h2{
     font-family: 'Lato';
-    font-weight: 400;
+    font-weight: 700;
     font-size: 20px;
     color: white;
 }
@@ -638,7 +671,7 @@ main .video {
 
 .footer .container .block2 p{
     font-family: 'Lato';
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
     margin-top: 1%;
     margin-bottom: 2%;
@@ -777,7 +810,7 @@ main .video {
 
     .blog .container .text img{
         width: 100px;
-        margin-left: 100px;
+        margin: 20px;
     }
 
     .blog .container .text h2{
